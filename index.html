@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="IMG_1523.jpg" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          }
+
+         body {
+            background-color: rgb(7, 0, 10);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+         }
+
+         nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+            background-color: rgb(18, 18, 62);
+         }
+
+         nav ul {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+         }
+
+         nav ul li {
+            list-style: none;
+            margin: 0 23px;
+         }
+
+         nav ul li a {
+            text-decoration: none;
+            color: white;
+         }
+
+
+         nav ul li a:hover {
+            color: rgb(153, 153, 226);
+            font-size: 1.04rem;
+         }
+
+         main hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1px;
+            margin: 30px 84px;
+         }
+
+         .left {
+            font-size: 1.5rem;
+            width: 900px;
+
+         }
+
+         .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px;
+         }
+
+         .firstSection>div {
+            width: 30%;
+         }
+ 
+         .leftSection {
+            font-size: 2rem;
+            margin: 70px 0;
+         }
+
+         .rightSection img {
+            width: 700px;
+            margin: 100px 50;
+            height: 300px;
+         }
+
+         .purple {
+            color: blueviolet;
+         }
+
+         .text-gray {
+            color: gray;
+         }
+
+         #element {
+            color: rgb(170, 107, 228);
+         }
+
+         .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+           margin-bottom: 0px;
+         }
+
+         .secondSection h1 {
+            font-size: 1.9rem;
+         }
+
+         .secondSection .box {
+            background: white;
+            width: 73vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+         }
+
+         .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+         }
+
+         .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+         }
+
+         .vertical-title {
+            position: relative;
+            top: 75px;
+            width: 150px;
+         }
+
+         .vertical-desc {
+            position: relative;
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+         }
+
+         footer {
+            background-color: #0e0e1a;
+            height: 60px;
+            text-align: center;
+            align-items: center;
+            margin-top: 20px;
+         }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+
+        }
+        .footer-First h4{
+           padding-left: 350px;
+
+        }
+
+
+
+        .centered {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: none;
+        }
+
+        .skill-box {
+      border: 1px solid #ddd;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 8px;
+    }
+
+    .skill-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .skill-description {
+      font-size: 16px;
+      margin-top: 8px;
+    }
+     @media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    nav {
+        
+        height: 50px;
+    }
+
+    nav ul {
+       gap: 5px;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .firstSection {
+        display: flexbox;
+        flex-direction: row;
+        align-items: center;
+        margin: 50px;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .rightSection img {
+        width: 90%;
+        margin: 30px 0;
+    }
+
+    .vertical {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    /* Further adjustments for smaller screens */
+    .firstSection {
+        margin: 30px;
+    }
+
+    .rightSection img {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .vertical {
+        margin: 0 10px;
+    }
+}
+
+
+       
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Nawaz's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li>
+                        <a href="https://www.linkedin.com/in/md-nawaz-090611214/" target="_blank">
+                            <img src="linkdin-icon.png" alt="ln" height="35px" width="35px">
+                        </a>
+
+                    </li>
+
+
+
+
+                    <li><a href="https://github.com/mdnawaz06">
+                            <img src="github.png" alt="github" height="35px" width="35px">
+                        </a></li>
+                    <li><a href="mailto:mdnawazakbar@gmail.com">
+                            <img src="gmail-icon.png" alt="gmail" height="35px" width="35px">
+                        </a></li>
+                    <li><a href="https://www.instagram.com/md.nawazakbar/">
+                            <img src="instagram-logo.png" alt="instagram" height="35px" width="35px">
+                        </a></li>
+                    <li>
+                        <img src="phonepe.png" alt="gand de" id="showScannerButton" height="35px" width="35px">
+                        <div id="phonepeScanner" style="display: none;" class="centered">
+                            <img src="WhatsApp Image 2023-09-10 at 01.56.44.jpg" alt="PhonePe Scanner" height="500px"
+                                width="400px">
+                        </div>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+
+
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Nawaz</span>
+                <div>and I am a Aspiring </div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="AIimage-removebg-preview.png" alt="">
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        Data Science (2022-current)
+                    </div>
+                    <div class="vertical-desc">
+                        My data science journey began with curiosity and a passion for extracting insights from data. I
+                        embarked on this path by learning programming, statistics, and machine learning. Over time, I've
+                        tackled real-world challenges, honed my skills, and continually explored the ever-evolving
+                        landscape of data science, driven by the desire to make data-driven decisions that can impact
+                        the world.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        Data Analysis (2022-current)
+                    </div>
+                    <div class="vertical-desc">
+                        My data analysis journey began with an inquisitive mind and a knack for uncovering meaningful
+                        patterns in data. Starting with basic tools and techniques, I delved into various domains,
+                        refined my skills, and evolved into a proficient data analyst. My journey continues, fueled by a
+                        passion for transforming raw data into valuable insights.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        Web Developer (2021-current)
+                    </div>
+                    <div class="vertical-desc">
+                        My web development journey started with a simple curiosity for the internet's inner workings.
+                        From basic HTML to complex front-end frameworks and back-end technologies, I've learned to build
+                        dynamic, user-friendly websites. It's been an exciting journey of continuous learning and
+                        creativity, with a focus on delivering seamless online experiences.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        C programming (2021-current)
+                    </div>
+                    <div class="vertical-desc">
+                        My C programming journey began with a fascination for low-level coding and system-level
+                        interactions. I started with basic syntax, gradually delving into data structures, algorithms,
+                        and memory management. Through debugging, problem-solving, and countless lines of code, I've
+                        cultivated a deep appreciation for the elegance and power of C programming.
+                    </div>
+                </div>
+
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Projects</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        <a href="https://github.com/mdnawaz06/Python_Face_Detection"
+                            target="_blank">Human-face-detection </a>
+                    </div>
+                    <div class="vertical-desc">
+                        My Face Detection app, built using the OpenCV Python library, revolutionizes image analysis.
+                        Employing advanced computer vision, it swiftly and accurately identifies human faces. This
+                        intuitive application, powered by OpenCV, ensures a seamless and efficient experience in face
+                        detection, setting a new standard for precision in the realm of facial recognition technology.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        <a href="https://github.com/mdnawaz06/Diwali-sales-analysis"
+                            target="_blank">Diwali-Sale-analysis</a>
+                    </div>
+                    <div class="vertical-desc">
+                        In this project i performed data cleaning and manipulation and performed exploratory data
+                        analysis (EDA) using pandas, matplotlib and seaborn libraries.
+
+                        I improved customer experience by identifying potential customers across different states,
+                        occupation, gender and age groups.
+
+                        Improved sales by identifying most selling products
+
+                        categories and products, which can help to plan inventory and hence meet the demands.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        <a href="https://github.com/mdnawaz06/Rock-paper-game" target="_blank">Rock-paper-Game</a>
+
+                    </div>
+                    <div class="vertical-desc">
+                        In my rock-paper-scissors game project, strategic choices unfold as players engage in the
+                        timeless battle of elements. The code elegantly captures the essence of chance and
+                        decision-making, offering a digital arena where users can test their wits. Its simplicity masks
+                        the underlying complexity, providing an enjoyable and immersive gaming experience.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="abg.png.png" alt="">
+                    <div class="vertical-title">
+                        <a href="https://github.com/mdnawaz06/Game" target="_blank">snake-water-gun-game</a>
+
+
+                    </div>
+                    <div class="vertical-desc">
+                        Snake Water Gun Game Project: An immersive blend of strategy and chance, the game pits players
+                        against each other as serpents, waves, or shooters. With unique abilities for each role, the
+                        project promises thrilling gameplay, fostering strategic thinking and unpredictable outcomes in
+                        a dynamic gaming experience."
+                    </div>
+                </div>
+
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What i have done so far</span>
+            <h1>Certificates
+    
+            </h1>
+                  <div class="cer1">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/ETNT3WXTMC8J?utm_source=link&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course" target="_blank"><h3>IBM Database and SQL for DataScience</h3></a>
+                    <span><i>
+                        Embark on a transformative Data Science journey with Coursera's "IBM Data Science Professional Certificate." Explore the intricacies of databases and SQL, mastering essential skills to extract, manipulate, and analyze data. Gain insights from industry-leading experts at IBM, unlocking the potential for impactful, data-driven decision-making.
+                    </i></span>
+                  </div>
+
+                  <div class="cer1">
+                    <a href="https://www.coursera.org/account/accomplishments/verify/TTZFQPMTS4QP?utm_source=mobile&utm_medium=certificate&utm_content=cert_image&utm_campaign=sharing_cta&utm_product=course"
+                    target="_blank"><h3>Machine learning with Python</h3></a>
+                    <span><i>
+                        Coursera's Machine Learning with Python course equips learners with essential skills in this dynamic field. Taught by industry experts, the curriculum covers Python programming, data manipulation, and machine learning algorithms. Through hands-on projects, participants gain practical experience, ensuring a solid foundation for real-world applications. Ideal for beginners and aspiring data scientists.
+                    </i></span>
+                  </div>
+            <hr>
+         </section>
+            
+            <section class="secondSection">
+                <span class="text-gray">What i have done so far</span>
+                <h1>Skills</h1>
+
+                <div class="skill-box">
+                    <div class="skill-title">Programming Language</div>
+                    <div class="skill-description">C,  C++,  Python and  Java  </div>
+                  </div>
+
+                  <div class="skill-box">
+                    <div class="skill-title">Database</div>
+                    <div class="skill-description">MySQL</div>
+                  </div>
+
+                  <div class="skill-box">
+                    <div class="skill-title">Data Visualisation</div>
+                    <div class="skill-description">Machine learning, DataAnalysis, Numpy, Pandas, Matplotlib and Seaborn </div>
+                  </div>
+
+                  <div class="skill-box">
+                    <div class="skill-title">Web development</div>
+                    <div class="skill-description">HTML, CSS and JavaScript</div>
+                  </div>
+                </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div  class="footer-First">
+              <h4>Copyright &#169 Md Nawaz Akbar. ALL RIGHTS RESERVED!
+            </h4></div>
+            
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Data Scientist', 'Data Analyst', 'Web Developer', 'Engineer'],
+            typeSpeed: 50,
+        });
+    </script>
+
+    <script src="new.js"></script>
+
+</body>
+
+</html>
